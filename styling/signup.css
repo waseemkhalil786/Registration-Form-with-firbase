@@ -1,5 +1,5 @@
 body{
-    background-image: url("Version 02/pages/All assets/0-6-jpg.webp");
+    background-image: url("../All\ assets/0-6-jpg.webp");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;   
@@ -12,11 +12,12 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-image: url("Version 02/pages/All assets/pngtree-illustration-of-a-vector-background-with-wavy-lines-in-white-and-png-image_12801594.png");
     padding: 50px, 60px, 70px ;
-    opacity: 95%;
+    opacity: 85%;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 30px; 
+    /* /* background-image: url("../All\ assets/pngtree-illustration-of-a-vector-background-with-wavy-lines-in-white-and-png-image_12801594"); */
+    background: #c1bcbc;
 }
 .form-box h1{
     color: rgb(0, 0, 0);
@@ -61,10 +62,13 @@ input{
 }
 .button1{
     display: inline-block;
+    margin-top: 10px;
 }
 .button1 button{
-    background: #51ff01;color: rgb(0, 0, 0);
-    width: 130px;
+    background: #000000;color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 10px;
+    width: 250px;
     height: 40px;
     font-size: 15px;
     font-weight: 600;
@@ -73,4 +77,8 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.button1 button:hover{
+    background: #373535;
+    width: 240px;
 }
