@@ -5,6 +5,10 @@ body{
     background-size: cover;
     height: 100vh;   
 }
+.disply-Eror{
+    color: #c80000;
+    font-size: 40px;
+}
 .form-box{
     width: 90%;
     max-width: 450px;
@@ -78,4 +82,8 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.sinup-form{
+    background: #d49e9e;
+    height: 40px;
 }

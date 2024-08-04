@@ -1,9 +1,9 @@
 import { auth, createUserWithEmailAndPassword } from "./fireBase.js";
 // console.log(auth);
-
+const myError =document.querySelector(".disply-Eror")
 const form = document.querySelector("#signup-form");
 const button = document.querySelector("#btn001");
-console.log(button);
+// console.log(button);
 // console.log("form;",form);
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
@@ -19,7 +19,7 @@ form.addEventListener("submit", async (event) => {
     window.location.href = "../Pages/login.html"
     // Get user from the userCredential
     const user = userCredential.user;
-    console.log(user);
+    // console.log(user);
     await user.updateProfile({
         displayName: fullName
     });
@@ -27,13 +27,13 @@ form.addEventListener("submit", async (event) => {
     form.reset();
   }
   catch (error) {
-    Swal.fire({
+    fire({
         title: "Wrong",
         text: error,
         icon: "error",
         footer: "Please check your credentials"
     });
-    console.log("my error message!!", error);
+    myError.innerHTML ="Email has already login !!!", error;
     button.value="Sign up"
   }
 });

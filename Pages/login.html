@@ -1,43 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login-form</title>
-    <link rel="stylesheet" href="../styling/login.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-</head>
-<body>
-    <a href="../Pages/dashboard.html" class="back-button">
-        <span class="back-arrow">&larr;</span> Back
-    </a>
-    <img id="img" src="../All assets/icegif-1260.gif" alt="">
-    <div class="container">
-        <div class="form-box">
-            <h1>Login Form</h1>
-            <form id="Login-form">
-                <div class="input-group">
-                    <div class="input-field">
-                        <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="Enter Name" required>
-                    </div>
-
-                    <div class="input-field">
-                        <i class="fa-solid fa-envelope"></i>
-                        <input type="email" placeholder="Enter email" required>
-                    </div>
-
-                    <div class="input-field">
-                        <i class="fa-solid fa-lock"></i>
-                        <input type="password" placeholder="Enter password" required>
-                    </div>
-                    <div class="button1">
-                        <button id="button-press">Login</button>
-                    </div>
-                </div>
-            </form>
+    <link rel="stylesheet" href="../styling/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <center>
+        <div class="disply-Eror">
+            <!-- email wagaira mai se koi error b aye to disply kr do ye div is liye bnaya h -->
         </div>
+    </center>
+    <!-- <a href="../Pages/Signup.html" class="back-button">
+      <span class="back-arrow">&larr;</span> Back
+    </a> -->
+    <!-- <img
+      id="img"
+      src="../All assets/icegif-1260.gif"
+      alt=""
+      width="100px"
+      height="100px"
+    /> -->
+    <div class="container">
+      <div class="form-box">
+        <h1>Login Form</h1>
+        <form id="Login-form">
+          <div class="input-group">
+            <div class="input-field">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" placeholder="Enter Name" required />
+            </div>
+
+            <div class="input-field">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" placeholder="Enter email" required />
+            </div>
+
+            <div class="input-field">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" placeholder="Enter password" required />
+            </div>
+            <div class="sinup-form">
+                <a href="../Pages/Signup.html">Creat an Account</a>
+            </div>
+            <div class="button1">
+              <button id="button-press">Login</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
     <script type="module" src="../Scripts/Login.js"></script>
-</body>
+  </body>
 </html>
